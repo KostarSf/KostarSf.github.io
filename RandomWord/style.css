@@ -11,19 +11,46 @@ body {
 body {
     display: flex;
     flex-direction: column;
-    background-color: rgb(112, 101, 116);
+    justify-content: space-between;
+    background-color: #706574;
     user-select: none;
 }
 
+h1 {
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 4rem;
+    font-family: "NotoSerif";
+    color: #dac5d8;
+}
+
 main {
-    margin: auto;
+    margin: 1rem auto;
     display: flex;
     justify-content: center;
 }
 
+footer {
+    background-color: #564c58;
+}
+
+footer a {
+    line-height: 1.5rem;
+    padding-left: 0.4rem;
+    font-size: 1rem;
+    font-family: "NotoSerif";
+    color: #a59aa8;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #cabcce;
+}
+
 .wrap {
     width: 45rem;
-    height: 25rem;
+    min-height: 25rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
