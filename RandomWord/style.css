@@ -191,7 +191,6 @@ div#output {
     left: 10%;
 }
 
-
 @media screen and (max-width: 760px) {
     .wrap {
         width: auto;
@@ -199,14 +198,11 @@ div#output {
     }
 }
 
-
 @media screen and (max-width: 550px) {
     main, .wrap {
         width: 100%;
         transition: all 0.2s ease;
     }
-
-    
 
     .textWrap {
         width: 95%;
@@ -252,6 +248,4 @@ div#output {
     h1 {
         font-size: 2rem;
     }
-
-    
 }

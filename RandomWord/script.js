@@ -38,22 +38,20 @@ input.onchange = () => {
     let reader = new FileReader();
     reader.onload = (e) => {   // !!
         var text = e.target.result.replace(/\r|\n/g, ',');
-        var arrText = [];
-        arrText = text.split('');
+        var textArray = text.split('');
 
         var index;
-        for (index = 0; index < arrText.length - 1; index++) {
-            if (arrText[index] == ',') {
-                if (arrText[index + 1] == ',') {
-                    arrText[index] = '';
+        for (index = 0; index < textArray.length - 1; index++) {
+            if (textArray[index] == ',') {
+                if (textArray[index + 1] == ',') {
+                    textArray[index] = '';
                 }
             }
         }
 
-        var finText = arrText.join('');
-
-        document.getElementById("input").value = finText;
+        document.getElementById("input").value = textArray.join('');
     };
     reader.readAsText(input.files[0]);
+
     input.value = "";
 };
