@@ -20,7 +20,7 @@ h1 {
     padding-top: 1rem;
     text-align: center;
     font-size: 4rem;
-    font-family: "NotoSerif";
+    font-family: "NotoSerif", serif;
     color: #dac5d8;
 }
 
@@ -39,7 +39,7 @@ footer a {
     line-height: 1.5rem;
     padding-left: 0.4rem;
     font-size: 1rem;
-    font-family: "NotoSerif";
+    font-family: "NotoSerif", serif;
     color: #a59aa8;
     text-decoration: none;
 }
@@ -84,7 +84,7 @@ textarea#input {
     resize: none;
     border: none;
     outline: none;
-    font-family: "NotoSerif";
+    font-family: "NotoSerif", serif;
     color: #7a0d71;
 }
 
@@ -104,7 +104,7 @@ textarea::selection {
 
 div#output {
     font-size: 4rem;
-    font-family: "NotoSerif";
+    font-family: "NotoSerif", serif;
     min-width: 20rem;
     height: 5rem;
     text-align: center;
@@ -128,7 +128,7 @@ div#output {
 
     color: white;
     font-size: 2rem;
-    font-family: "NotoSerif";
+    font-family: "NotoSerif", serif;
     cursor: pointer;
     transition: all 0.05s ease;
 }
@@ -152,7 +152,7 @@ div#output {
     border-radius: 0 10px 0 0;
     color: #7a0d71;
     cursor: pointer;
-    font-family: "NotoSerif";
+    font-family: "NotoSerif", serif;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -185,7 +185,7 @@ div#output {
     position: absolute;
     content: "Drop text-file here";
     color: #7a0d71;
-    font-family: "NotoSerif";
+    font-family: "NotoSerif", serif;
     font-size: 4rem;
     top: 30%;
     left: 10%;
