@@ -17,10 +17,19 @@ function nextWord() {
     var wordNumber = Math.floor(Math.random() * lastWordNumber);
     var word = words[wordNumber].trim();
 
+    var cycleCount = 0;
     while (word == lastWord) {
+        if (cycleCount < 5) {
+            cycleCount++;
+        } 
+        else {
+            word = lastWord + '..';
+            break;
+        }
         var wordNumber = Math.floor(Math.random() * lastWordNumber);
         var word = words[wordNumber].trim();
     }
+    
 
     if (text == "") {
         document.getElementById("output").innerHTML = "...";
