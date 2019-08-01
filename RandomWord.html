@@ -17,7 +17,7 @@
     <main>
         <div class="wrap">
             <div class="textWrap">
-                <textarea name="" id="input" cols="1" rows="1" placeholder="Some, words"></textarea>
+                <textarea class="textSize1" id="input" placeholder="Some, words"></textarea>
             </div>
             <div id="output">word</div>
             <input type="button" value="Next word" id="button" onclick="nextWord();">
@@ -27,6 +27,19 @@
             <div id="drop-area"></div>
         </div>
     </main>
+    <aside id="sideButtons">
+        <div class="sideButtons_wrap">
+            <p class="sideButton" id="katA"  onclick="katA();">ア</p>
+            <p class="sideButton" id="katAr" onclick="katAr();">A</p>
+        </div>
+        <div class="sideButtons_wrap">
+            <p class="sideButton" id="katI"  onclick="katI();">イ</p>
+            <p class="sideButton" id="katIr" onclick="katIr();">I</p>
+        </div>
+        <div class="sideButtons_wrap opaqueButton">
+            <p class="sideButton" id="katA"  onclick="clearInput();">Clear</p>
+        </div>
+    </aside>
     <footer>
         <a href="index.html">KostarSf.github.io</a>
     </footer>

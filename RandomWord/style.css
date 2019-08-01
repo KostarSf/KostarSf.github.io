@@ -80,12 +80,28 @@ footer a:hover {
 textarea#input {
     width: 100%;
     height: 100%;
-    font-size: 3rem;
     resize: none;
     border: none;
     outline: none;
     font-family: "NotoSerif", serif;
     color: #7a0d71;
+    transition: font-size 0.1s ease;
+}
+
+.textSize1 {
+    font-size: 3rem;
+}
+
+.textSize2 {
+    font-size: 2rem;
+}
+
+.textSize3 {
+    font-size: 1.5rem;
+}
+
+.textSize4 {
+    font-size: 1.2rem;
 }
 
 textarea::selection {
@@ -189,6 +205,40 @@ div#output {
     font-size: 4rem;
     top: 30%;
     left: 10%;
+}
+
+#sideButtons {
+    position: absolute;
+    padding: 1rem;
+}
+
+.sideButtons_wrap {
+    background-color: #7a0d71;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.opaqueButton {
+    background-color: transparent;
+}
+
+.sideButton {
+    flex: 1;
+    display: inline;
+    padding: 0.2rem 0.2rem;
+    text-align: center;
+    font-size: 2rem;
+    cursor: pointer;
+
+    font-family: "NotoSerif", serif;
+    color: white;
+}
+
+.sideButton:hover {
+    background-color: #963d8e;
 }
 
 @media screen and (max-width: 760px) {

@@ -1,4 +1,3 @@
-
 function nextWord() {
     var lastWord = document.getElementById("output").innerHTML;
 
@@ -39,13 +38,12 @@ function nextWord() {
     }
 }
 
-let input = document.querySelector("#file"); // !!
-
-input.onchange = () => {
-    if (!input.files.length) return;
+let uploadFileButton = document.querySelector("#file"); 
+uploadFileButton.onchange = () => {
+    if (!uploadFileButton.files.length) return;
     
     let reader = new FileReader();
-    reader.onload = (e) => {   // !!
+    reader.onload = (e) => {  
         var text = e.target.result.replace(/\r|\n/g, ',');
         var textArray = text.split('');
 
@@ -60,7 +58,58 @@ input.onchange = () => {
 
         document.getElementById("input").value = textArray.join('');
     };
-    reader.readAsText(input.files[0]);
+    reader.readAsText(uploadFileButton.files[0]);
 
-    input.value = "";
+    uploadFileButton.value = "";
 };
+
+let textArea = document.querySelector("#input");
+textArea.oninput = () => {
+    resizeText();
+    document.querySelector("#output").innerHTML = textArea.value.length;
+}
+
+function resizeText() {
+    if (textArea.value.length > 91) {
+        textArea.classList.add("textSize4");
+        textArea.classList.remove("textSize1", "textSize2", "textSize3");
+    }
+    else if (textArea.value.length > 50) {
+        textArea.classList.add("textSize3");
+        textArea.classList.remove("textSize1", "textSize2", "textSize4");
+    } 
+    else if (textArea.value.length > 21) {
+        textArea.classList.add("textSize2");
+        textArea.classList.remove("textSize1", "textSize3", "textSize4");
+    }
+    else {
+        textArea.classList.add("textSize1");
+        textArea.classList.remove("textSize2", "textSize3", "textSize4");
+    }
+}
+
+function katA() {
+    document.querySelector("#input").value += "ア, カ, サ, タ, ナ, ハ, マ, ヤ, ラ, ワ, ";
+    resizeText();
+}
+
+function katAr() {
+    document.querySelector("#input").value += "A, Ka, Ta, Sa, Na, Ha, Ma, Ya, Ra, Wa, ";
+    resizeText();
+}
+
+function katI() {
+    document.querySelector("#input").value += "イ, キ, シ, チ, ニ, ヒ, ミ, リ, ";
+    resizeText();
+}
+
+function katIr() {
+    document.querySelector("#input").value += "I, Ki, Shi, Chi, Ni, Hi, Mi, Ri, ";
+    resizeText();
+}
+
+function clearInput() {
+    document.querySelector("#input").value = "";
+    document.querySelector("#output").innerHTML = "...";
+    resizeText();
+}
