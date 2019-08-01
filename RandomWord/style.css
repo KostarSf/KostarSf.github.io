@@ -49,6 +49,21 @@ footer a:hover {
     color: #cabcce;
 }
 
+footer p#version {
+    float: right;
+    line-height: 1.5rem;
+    padding-right: 0.4rem;
+    font-size: 1rem;
+    font-family: "NotoSerif", serif;
+    color: #8b7d8f;
+}
+
+footer p#version span {
+    font-size: 0.6rem;
+    color: #7a6d7e;
+    line-height: 0.6rem;
+}
+
 .wrap {
     width: 45rem;
     height: 25rem;
@@ -239,6 +254,45 @@ div#output {
 
 .sideButton:hover {
     background-color: #963d8e;
+}
+
+@media screen and (min-width: 1500px) {
+    .wrap {
+        width: 60rem;
+        height: 35rem;
+    }
+
+    .textWrap {
+        width: 45rem;
+        height: 15rem;
+    }
+
+    .textSize1 {
+        font-size: 4.7rem;
+    }
+    
+    .textSize2 {
+        font-size: 3rem;
+    }
+    
+    .textSize3 {
+        font-size: 2.2rem;
+    }
+
+    .textSize4 {
+        font-size: 1.7rem;
+    }
+
+    #button {
+        width: 19rem;
+        height: 6rem;
+        font-size: 3rem;
+    }
+
+    #button:active {
+        font-size: 3.1rem;
+        width: 20rem;
+    }
 }
 
 @media screen and (max-width: 760px) {
