@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>RandomWord</title>
+    <link rel="shortcut icon" href="/RandomWord/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="RandomWord/reset.css">
     <link rel="stylesheet" href="RandomWord/style.css">
 </head>
@@ -19,7 +20,7 @@
             <div class="textWrap">
                 <textarea class="textSize1" id="input" placeholder="Some, words"></textarea>
             </div>
-            <div id="output">word</div>
+            <div id="output">...</div>
             <input type="button" value="Next word" id="button" onclick="nextWord();">
 
             <input type="file" id="file" >
@@ -36,13 +37,29 @@
             <p class="sideButton" id="katI"  onclick="katI();">イ</p>
             <p class="sideButton" id="katIr" onclick="katIr();">I</p>
         </div>
+        <div class="sideButtons_wrap">
+            <p class="sideButton" id="katU"  onclick="katU();">ウ</p>
+            <p class="sideButton" id="katUr" onclick="katUr();">U</p>
+        </div>
+        <div class="sideButtons_wrap">
+            <p class="sideButton" id="katE"  onclick="katE();">エ</p>
+            <p class="sideButton" id="katEr" onclick="katEr();">E</p>
+        </div>
+        <div class="sideButtons_wrap">
+            <p class="sideButton" id="katO"  onclick="katO();">オ</p>
+            <p class="sideButton" id="katOr" onclick="katOr();">O</p>
+        </div>
+        <div class="sideButtons_wrap">
+            <p class="sideButton" id="katN"  onclick="katN();">ン</p>
+            <p class="sideButton" id="katNr" onclick="katNr();">N</p>
+        </div>
         <div class="sideButtons_wrap opaqueButton">
-            <p class="sideButton" id="katA"  onclick="clearInput();">Clear</p>
+            <p class="sideButton" id="clrInp"  onclick="clearInput();">Clear</p>
         </div>
     </aside>
     <footer>
         <a href="index.html">KostarSf.github.io</a>
-        <p id="version">v1.0 <span id="build">001</span></p>
+        <p id="version">v1.0 <span id="build">002</span></p>
     </footer>
     <script src="RandomWord/script.js"></script>
 </body>

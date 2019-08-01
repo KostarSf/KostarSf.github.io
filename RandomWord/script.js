@@ -66,7 +66,7 @@ uploadFileButton.onchange = () => {
 let textArea = document.querySelector("#input");
 textArea.oninput = () => {
     resizeText();
-    document.querySelector("#output").innerHTML = textArea.value.length;
+    //document.querySelector("#output").innerHTML = textArea.value.length;
 }
 
 function resizeText() {
@@ -105,6 +105,46 @@ function katI() {
 
 function katIr() {
     document.querySelector("#input").value += "I, Ki, Shi, Chi, Ni, Hi, Mi, Ri, ";
+    resizeText();
+}
+
+function katU() {
+    document.querySelector("#input").value += "ウ, ク, ス, ツ, ヌ, フ, ム, ユ, ル, ";
+    resizeText();
+}
+
+function katUr() {
+    document.querySelector("#input").value += "U, Ku, Su, Tsu, Nu, Fu, Mu, Yu, Ru, ";
+    resizeText();
+}
+
+function katE() {
+    document.querySelector("#input").value += "エ, ケ, セ, テ, ネ, ヘ, メ, レ, ";
+    resizeText();
+}
+
+function katEr() {
+    document.querySelector("#input").value += "E, Ke, Se, Te, Ne, He, Me, Re, ";
+    resizeText();
+}
+
+function katO() {
+    document.querySelector("#input").value += "オ, コ, ソ, ト, ノ, ホ, モ, ヨ, ロ, ヲ, ";
+    resizeText();
+}
+
+function katOr() {
+    document.querySelector("#input").value += "O, Ko, So, To, No, Ho, Mo, Yo, Ro, Wo, ";
+    resizeText();
+}
+
+function katN() {
+    document.querySelector("#input").value += "ン, ";
+    resizeText();
+}
+
+function katNr() {
+    document.querySelector("#input").value += "N, ";
     resizeText();
 }
 

@@ -250,10 +250,22 @@ div#output {
 
     font-family: "NotoSerif", serif;
     color: white;
+
+    transition: all 0.05s ease;
 }
 
 .sideButton:hover {
     background-color: #963d8e;
+}
+
+#clrInp:hover {
+    background-color: #b16dab;
+}
+
+.sideButton:active,
+#clrInp:active {
+    background-color: #dda3d8;
+    color: #814b7d;
 }
 
 @media screen and (min-width: 1500px) {
