@@ -45,11 +45,27 @@ p {
     cursor: default;
 }
 
+.source {
+    margin: 0 4px;
+    text-decoration: none;
+    font-size: 13pt;
+    font-weight: 400;
+    color: silver;
+}
+
+.source:hover {
+    text-decoration: underline;
+}
+
 .projectLink {
     display: flex;
     flex-wrap: wrap;
     max-width: 800px;
     margin-bottom: 16px;
+}
+
+.projectLink_link {
+    color: black;
 }
 
 .projectLink_favicon {
@@ -58,14 +74,11 @@ p {
     margin-right: 4px;
 }
 
-.projectLink_link {
-    margin-right: 4px;
-}
-
 .projectLink_description {
     min-width: 210px;
     text-align: right;
     flex: 1;
+    color: #555;
 }
 
 ::selection {
