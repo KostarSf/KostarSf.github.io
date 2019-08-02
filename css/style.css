@@ -36,10 +36,11 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding-bottom: 2px;
+    padding-bottom: 4px;
     box-sizing: border-box;
-
+    
     display: flex;
+    align-items: baseline;
     justify-content: space-between;
 }
 
@@ -66,6 +67,9 @@ p {
 
 .author_link:hover {
     text-decoration: underline;
+}
+
+.version {
 }
 
 .source {
