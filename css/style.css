@@ -22,11 +22,14 @@ header {
 h1 {
     font-size: 24pt;
     font-weight: 600;
-    margin-bottom: 24px;
+    padding-bottom: 24px;
 }
 
 hr {
     margin-top: 16px;
+    border: none;
+    background: linear-gradient(to right, silver, white);
+    height: 1px;
 }
 
 footer {
