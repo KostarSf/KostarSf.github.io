@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,37 +8,66 @@
     <title>KostarSf.github.io</title>
     <link rel="stylesheet" href="RandomWord/reset.css">
     <style>
-        header, main, footer {
+        header,
+        main,
+        footer {
             padding: 0 10px;
         }
+
         header {
             padding-top: 24px;
         }
+
         h1 {
             font-size: 24pt;
             font-weight: 600;
             margin-bottom: 24px;
         }
+
         hr {
             margin-top: 16px;
         }
+
         footer {
             position: absolute;
             bottom: 0;
             width: 100%;
+            padding-bottom: 2px;
             box-sizing: border-box;
 
             display: flex;
             justify-content: space-between;
         }
+
         p {
             line-height: 18px;
         }
-        .favicon {
+
+        .projectLink {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin-bottom: 16px;
+        }
+
+        .projectLink_favicon {
             height: 16px;
+            min-width: 16px;
+            margin-right: 4px;
+        }
+
+        .projectLink_link {
+            margin-right: 4px;
+        }
+
+        .projectLink_description {
+            min-width: 210px;
+            text-align: right;
+            flex: 1;
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1><a href="https://github.com/KostarSf/KostarSf.github.io">KostarSf.github.io</a></h1>
@@ -45,14 +75,21 @@
         <hr>
     </header>
     <main>
-        <div>
-            <img src="/RandomWord/favicon.ico" alt="favicon" class="favicon">
-            <a href="RandomWord.html">RandomWord</a>
+        <div class="projectLink">
+            <img src="/RandomWord/favicon.ico" alt="favicon" class="projectLink_favicon">
+            <a href="RandomWord.html" class="projectLink_link">RandomWord</a>
+            <p class="projectLink_description">A small JS app that gives you a random word from a text field.</p>
+        </div>
+        <div class="projectLink">
+            <div class="projectLink_favicon"></div>
+            <p class="projectLink_link">SpaceTale</p>
+            <p class="projectLink_description">A C# console game.</p>
         </div>
     </main>
     <footer>
         <p>by KostarSf</p>
-        <p>v1.0 003</p>
+        <p>v1.0 004</p>
     </footer>
 </body>
+
 </html>
