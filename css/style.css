@@ -4,7 +4,7 @@ body {
 }
 
 body {
-    background: url("img/zebra.png") no-repeat;
+    background: url("../img/zebra.png") no-repeat;
     background-size: 20%;
     background-position: right+8px bottom+24px;
 }
