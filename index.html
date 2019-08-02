@@ -8,6 +8,17 @@
     <title>KostarSf.github.io</title>
     <link rel="stylesheet" href="RandomWord/reset.css">
     <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            background: url("img/zebra.png") no-repeat;
+            background-size: 20%;
+            background-position: right+8px bottom+24px;
+        }
+
         header,
         main,
         footer {
@@ -41,6 +52,7 @@
 
         p {
             line-height: 18px;
+            cursor: default;
         }
 
         .projectLink {
@@ -65,6 +77,11 @@
             text-align: right;
             flex: 1;
         }
+
+        ::selection {
+            color: white;
+            background-color: silver;
+        }
     </style>
 </head>
 
@@ -88,7 +105,7 @@
     </main>
     <footer>
         <p>by KostarSf</p>
-        <p>v1.0 004</p>
+        <p>v1.0 005</p>
     </footer>
 </body>
 
