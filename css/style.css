@@ -151,3 +151,20 @@ p {
     font-weight: 300;
     font-size: 1.2rem;
 }
+
+.pl-hackathon .projectLink_link {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 4px;
+    color: white;
+    background: rgb(209,13,253);
+    background: linear-gradient(90deg, rgba(209,13,253,1) 0%, rgba(82,186,247,1) 76%, rgba(173,225,238,1) 100%);
+    transition: opacity 0.3s ease;
+}
+
+.pl-hackathon .projectLink_link:hover {
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
